@@ -1,19 +1,47 @@
 aid: oddup
 name: Oddup
-description: Oddup is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'Oddup (now operating as Oddup Markets) is a Singapore-based platform founded in 2015 by James
+  Giancotti. It began as a data-driven startup-rating and intelligence service — a 500 Global portfolio company
+  scoring startups and crypto projects — and has since pivoted to prediction markets, letting users trade on
+  real-world outcomes across crypto, FX, indices, and commodities using a distinctive Yes / No / Maybe outcome
+  model. The current product is a client-side single-page web application hosted on Vercel at oddup.app (and
+  oddup.com). As of this enrichment pass the live site is geo-restricted (HTTP 451, x-blocked-country: US) and
+  exposes no public developer, API, documentation, or .well-known surface — no OpenAPI, no API subdomains, and
+  no published packages were discoverable. This profile therefore captures verified company identity and a
+  domain-security probe only; it will be re-enriched if a public API surface appears.'
 url: https://raw.githubusercontent.com/api-evangelist/oddup/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://oddup.app/favicon.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-founded: '2015'
+x-founder: James Giancotti
+x-headquarters: Singapore
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Prediction Markets
+- Trading
+- Cryptocurrency
+- Fintech
+- Startup Intelligence
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +49,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/oddup-domain-security.yml
 - type: Website
   url: https://oddup.com
+- type: Website
+  name: Oddup Markets
+  url: https://oddup.app
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
