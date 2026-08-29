@@ -10,6 +10,17 @@ description: 'Oddup (now operating as Oddup Markets) is a Singapore-based platfo
   no published packages were discoverable. This profile therefore captures verified company identity and a
   domain-security probe only; it will be re-enriched if a public API surface appears.'
 url: https://raw.githubusercontent.com/api-evangelist/oddup/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
